@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farming Education</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">AgroTech Solutions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us">Contact Us</a>
+          </li>
+          
+          <!-- Dropdown for Precision Agriculture & Sustainable Farming -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Agriculture Solutions
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#precision-agriculture">Precision Agriculture</a></li>
+              <li><a class="dropdown-item" href="#sustainable-farming">Sustainable Farming</a></li>
+              <li><a class="dropdown-item" href="#smart-irrigation">Smart Irrigation Systems</a></li>
+              <li><a class="dropdown-item" href="#marketplace">Marketplace</a></li>
+            </ul>
+          </li>
+  
+          <!-- Weather & Community pages -->
+          <li class="nav-item">
+            <a class="nav-link" href="#weather-forecast">Check Weather Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#community">Join Community</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center" style="background-image: url('images/img.2.jpg');">
+        <div class="container text-center text-white">
+            <h1>Proper Farming & Smart Solutions</h1>
+            <p>Learn to grow crops based on climate, soil, and space-saving techniques.</p>
+        </div>
+    </section>
+
+
+    <!-- About Us and Vision Section -->
+<section id="about-vision" class="py-5">
+  <div class="container">
+    <div class="row">
+      <!-- About Us Card -->
+      <div class="col-md-6">
+        <div class="card about-card">
+          <div class="about-card-img" style="background-image: url('https://www.automation.com/getmedia/6c1cff93-a2ab-4fde-9914-86e31a411026/Agricutlure-ARC-tech-Oct-2020-web.png?width=500&height=313&ext=.png');"></div>
+          <div class="about-card-text">
+            <h3>About Us</h3>
+            <p>We are committed to helping farmers achieve sustainable and profitable agriculture through modern techniques and real-time information.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Vision Card -->
+      <div class="col-md-6">
+        <div class="card about-card">
+          <div class="about-card-img" style="background-image: url('https://vir.com.vn/stores/news_dataimages/hung/122019/29/17/p24-digital-transformation-key-driver-for-agriculture.jpg');"></div>
+          <div class="about-card-text">
+            <h3>Our Vision</h3>
+            <p>Our vision is to empower farmers with the latest agricultural technology, ensuring food security and sustainable farming practices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+      <!-- Partners Carousel Section -->
+<section id="partners" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Partners</h2>
+    <div id="partnersCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <i class="fas fa-seedling fa-4x text-success"></i>
+          <h5 class="mt-3">AgroGreen</h5>
+          <p>Innovative green technology for farming</p>
+        </div>
+        <div class="carousel-item">
+          <i class="fas fa-cloud-sun fa-4x text-primary"></i>
+          <h5 class="mt-3">FarmWeather</h5>
+          <p>Real-time weather insights for precision agriculture</p>
+        </div>
+        <div class="carousel-item">
+          <i class="fas fa-tractor fa-4x text-warning"></i>
+          <h5 class="mt-3">NextGen Farms</h5>
+          <p>Advanced machinery and automation for modern farming</p>
+        </div>
+        <div class="carousel-item">
+          <i class="fas fa-water fa-4x text-info"></i>
+          <h5 class="mt-3">HydroFlow</h5>
+          <p>Sustainable irrigation and water management solutions</p>
+        </div>
+        <div class="carousel-item">
+          <i class="fas fa-leaf fa-4x text-success"></i>
+          <h5 class="mt-3">EcoFarm Labs</h5>
+          <p>Organic fertilizers and eco-friendly pest control</p>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#partnersCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#partnersCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <!-- We Provide the Best Farming Solutions Section -->
+    <div class="row text-center">
+      <div class="col-md-4">
+          <div class="card service-card">
+              <div class="card-body">
+                  <i class="fas fa-tree service-icon"></i>
+                  <h3>What to Plant</h3>
+                  <p>Choose crops based on your region’s soil and climate.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card service-card">
+              <div class="card-body">
+                  <i class="fas fa-seedling service-icon"></i>
+                  <h3>New Farming Techniques</h3>
+                  <p>Maximize small spaces with vertical farming and smart planting methods.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card service-card">
+              <div class="card-body">
+                  <i class="fas fa-water service-icon"></i>
+                  <h3>Save Water</h3>
+                  <p>Learn to conserve water through drip irrigation and rainwater harvesting.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+    <!-- Know Your Climate Zone Section -->
+    <section class="climate-zones py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Know Your Climate Zone</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card climate-card">
+                        <img src="images/banana.jpg" class="card-img-top" alt="Tropical Zone">
+                        <div class="card-body">
+                            <h5 class="card-title">Tropical</h5>
+                            <p class="card-text">Ideal for bananas, sugarcane, and cocoa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card climate-card">
+                        <img src="images/pepper.jpg" class="card-img-top" alt="Subtropical Zone">
+                        <div class="card-body">
+                            <h5 class="card-title">Subtropical</h5>
+                            <p class="card-text">Perfect for citrus, tomatoes, and peppers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card climate-card">
+                        <img src="images/wheat.jpg" class="card-img-top" alt="Temperate Zone">
+                        <div class="card-body">
+                            <h5 class="card-title">Temperate</h5>
+                            <p class="card-text">Best for wheat, maize, and apples.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card climate-card">
+                        <img src="images/cactus.jpg" class="card-img-top" alt="Arid Zone">
+                        <div class="card-body">
+                            <h5 class="card-title">Arid</h5>
+                            <p class="card-text">Grow drought-resistant crops like millet, cactus pear, and date palms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="precision-agriculture" class="my-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Precision Agriculture: Revolutionizing Farming Efficiency</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <i class="fas fa-seedling service-icon"></i>
+                <h3>Soil Sensors</h3>
+                <p>Get real-time data about soil moisture, nutrients, and health.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <i class="fas fa-drone service-icon"></i>
+                <h3>Drones</h3>
+                <p>Use drones to survey your farm and detect crop health issues early.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <i class="fas fa-map-marked-alt service-icon"></i>
+                <h3>GPS Mapping</h3>
+                <p>Track areas of your farm for optimized planting and irrigation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Best Practices Section -->
+    <section class="best-practices py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Best Farming Practices</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card practice-card">
+                        <img src="images/soil.jpg" class="card-img-top" alt="Soil Conservation">
+                        <div class="card-body">
+                            <h5 class="card-title">Soil Conservation</h5>
+                            <p class="card-text">Learn how to conserve your soil using techniques like no-till farming, crop rotation, and cover cropping.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card practice-card">
+                        <img src="images/pest.jpg" class="card-img-top" alt="Pest Management">
+                        <div class="card-body">
+                            <h5 class="card-title">Pest Management</h5>
+                            <p class="card-text">Discover eco-friendly pest management practices to protect your crops without harming the environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sustainable-farming" class="my-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Sustainable Farming: Future-Proof Your Farm</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <i class="fas fa-leaf service-icon"></i>
+                <h3>Crop Rotation</h3>
+                <p>Improve soil health and reduce the need for chemical fertilizers.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <i class="fas fa-recycle service-icon"></i>
+                <h3>Organic Farming</h3>
+                <p>Grow crops without chemicals for healthier food and better soil.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <i class="fas fa-tint service-icon"></i>
+                <h3>Water Conservation</h3>
+                <p>Use drip irrigation, water sensors, and rainwater harvesting to reduce water waste.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Crop Diseases & Remedies Section -->
+    <section class="crop-diseases py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Crop Diseases & Remedies</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card disease-card">
+                        <img src="https://joegardener.com/wp-content/uploads/2020/09/DSC_0053-Adj-708X466.jpg" class="card-img-top" alt="Powdery Mildew">
+                        <div class="card-body">
+                            <h5 class="card-title">Powdery Mildew</h5>
+                            <p class="card-text">Prevent with proper spacing and airflow. Treat with neem oil or sulfur-based products.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card disease-card">
+                        <img src="https://www.gardentech.com/-/media/project/oneweb/gardentech/images/blog/fight-blight-on-your-tomatoes/fight_blight-header.jpg" class="card-img-top" alt="Blight">
+                        <div class="card-body">
+                            <h5 class="card-title">Blight</h5>
+                            <p class="card-text">Rotate crops to avoid reinfection. Use copper-based fungicides as a treatment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card disease-card">
+                        <img src="https://hort.extension.wisc.edu/files/2014/11/Root-Rot.png" class="card-img-top" alt="Root Rot">
+                        <div class="card-body">
+                            <h5 class="card-title">Root Rot</h5>
+                            <p class="card-text">Improve soil drainage and reduce overwatering to prevent root rot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="smart-irrigation" class="my-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Smart Irrigation Systems: Optimize Water Usage</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <i class="fas fa-water service-icon"></i>
+                <h3>Drip Irrigation</h3>
+                <p>Efficiently deliver water directly to the roots of your crops.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <i class="fas fa-cloud-sun-rain service-icon"></i>
+                <h3>Weather-Linked Irrigation</h3>
+                <p>Automatically adjust your irrigation system based on weather forecasts.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <i class="fas fa-mobile-alt service-icon"></i>
+                <h3>Smart Water Management</h3>
+                <p>Use apps and sensors to remotely monitor and control water use.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="weather-forecast" class="my-5">
+    <div class="container-1">
+      <h1>Weather Forecast</h1>
+      <div id="weather-info">
+        <h2 id="location">Loading...</h2>
+        <h3 id="temperature"></h3>
+        <p id="description"></p>
+        <img id="weather-icon" alt="Weather Icon">
+      </div>
+    </div>
+  </section>
+
+    
+    <section id="marketplace" class="my-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Marketplace: Access the Best Farming Tools and Resources</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <i class="fas fa-tractor service-icon"></i>
+                <h3>Farm Equipment</h3>
+                <p>Browse the latest farm machinery and tools for various farming scales.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <i class="fas fa-seedling service-icon"></i>
+                <h3>Seeds & Fertilizers</h3>
+                <p>High-quality seeds and eco-friendly fertilizers available for your needs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <i class="fas fa-user-friends service-icon"></i>
+                <h3>Partnerships</h3>
+                <p>Connect with experts and suppliers to access exclusive deals and support.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Community Page -->
+<section id="community" class="py-5">
+  <div class="container">
+    <h2 class="text-center">Welcome to Our Farming Community</h2>
+    <p class="text-center">Join discussions, ask questions, and explore valuable farming resources.</p>
+
+    <!-- Section: User Discussions -->
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <h3>User Discussions</h3>
+        <div class="discussion-card p-3 mb-3">
+          <h5>Discussion 1: Crop Rotation Strategies</h5>
+          <p>Farmers share their best practices for rotating crops to maintain soil health.</p>
+          <a href="https://www.youtube.com/watch?v=XeNA6XdMoF8" class="btn btn-outline-primary">Join the Discussion</a>
+        </div>
+        <div class="discussion-card p-3 mb-3">
+          <h5>Discussion 2: Best Organic Fertilizers</h5>
+          <p>Share your experiences with organic fertilizers that boost productivity.</p>
+          <a href="https://www.youtube.com/watch?v=3jaNFkCfWaI" class="btn btn-outline-primary" target="_blank ">Join the Discussion</a>
+        </div>
+        <a href="https://www.youtube.com/watch?v=ZngzSHtcq2A" class="btn-1" target="_blank">View All Discussions</a>
+      </div>
+    </div>
+
+    <!-- Section: Farmer Q&A -->
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <h3>Farmer Q&A</h3>
+        <div class="qna-card p-3 mb-3">
+          <h5>How do I prevent pest infestations during the rainy season?</h5>
+          <p>Get advice from other farmers on managing pests during unpredictable weather conditions.</p>
+          <a href="https://www.youtube.com/watch?v=XwqnzQwAZjU" class="btn btn-outline-primary">See Answers</a>
+        </div>
+        <div class="qna-card p-3 mb-3">
+          <h5>What crops grow best in sandy soil?</h5>
+          <p>Discover which crops perform well in less-than-ideal soil conditions.</p>
+          <a href="https://www.youtube.com/watch?v=hV2d-JAuzaM" class="btn btn-outline-primary">See Answers</a>
+        </div>
+        <a href="#" class="btn-1">Ask a Question</a>
+      </div>
+    </div>
+
+    <!-- Section: Farming Articles -->
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <h3>Farming Articles</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="article-card p-3 mb-3">
+              <h4>Article 1: Climate Smart Farming Practices</h4>
+              <p>Explore farming techniques that can help mitigate the effects of climate change.</p>
+              <a href="#" class="btn btn-outline-primary">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="article-card p-3 mb-3">
+              <h4>Article 2: Efficient Water Usage for Irrigation</h4>
+              <p>Learn how to conserve water and improve irrigation efficiency.</p>
+              <a href="#" class="btn btn-outline-primary">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="article-card p-3 mb-3">
+              <h4>Article 3: Protecting Your Crops from Pests</h4>
+              <p>Discover organic and chemical methods for keeping pests away from your crops.</p>
+              <a href="#" class="btn btn-outline-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn-1">View All Articles</a>
+      </div>
+    </div>
+
+    <!-- Section: Farming Services -->
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <h3>Farming Services</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-card p-3 mb-3">
+              <h4>Soil Testing</h4>
+              <p>Ensure your soil is healthy with our testing services for optimal crop growth.</p>
+              <a href="#" class="btn btn-outline-primary">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card p-3 mb-3">
+              <h4>Farm Equipment Leasing</h4>
+              <p>Get access to modern farming equipment at affordable leasing rates.</p>
+              <a href="#" class="btn btn-outline-primary">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card p-3 mb-3">
+              <h4>Agricultural Consulting</h4>
+              <p>Receive expert advice on improving farm management and productivity.</p>
+              <a href="#" class="btn btn-outline-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn-1">Explore All Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Us Section -->
+<section id="contact-us" class="py-5">
+  <div class="container">
+    <div class="row align-items-center"> <!-- Align items vertically center -->
+      <!-- Contact Form Column -->
+      <div class="col-lg-6 mb-4"> <!-- Ensure proper spacing on smaller screens -->
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Feel free to reach out if you have any questions, suggestions, or partnership opportunities.</p>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Full Name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Send Message</button> <!-- Full width button for smaller screens -->
+        </form>
+      </div>
+
+      <!-- Contact Info Column -->
+      <div class="col-lg-6">
+        <h4>Get in Touch</h4>
+        <ul class="list-unstyled">
+          <li class="mb-3"><i class="fas fa-phone-alt me-2"></i> <strong>Phone:</strong> +123-456-7890</li>
+          <li class="mb-3"><i class="fas fa-envelope me-2"></i> <strong>Email:</strong> contact@agrotechsolutions.com</li>
+          <li class="mb-3"><i class="fas fa-map-marker-alt me-2"></i> <strong>Address:</strong> 123 AgroTech Avenue, Greenfield City</li>
+        </ul>
+        <h4>Follow Us</h4>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#" class="text-success"><i class="fab fa-facebook-f fa-2x"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-success"><i class="fab fa-twitter fa-2x"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-success"><i class="fab fa-instagram fa-2x"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer class=" text-white py-4">
+        <div class="container">
+            <p class="text-center">© 2024 FarmEdu - Educating Farmers for a Sustainable Future</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,463 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+/* Navbar Brand Styling */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 24px;
+  color: #27ae60; /* Green color representing agriculture */
+}
+
+/* Navbar Links */
+.nav-link {
+  font-size: 16px;
+  color: #2c3e50; /* Darker shade for visibility */
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #27ae60; /* Green hover effect */
+  transform: scale(1.1); /* Subtle enlargement */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #f7f7f7;
+  border: 1px solid #eaeaea;
+}
+
+.dropdown-item:hover {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+
+.hero {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+/* About Us & Vision Section */
+#about-vision {
+  padding: 50px 0;
+}
+
+.about-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-card-img {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease;
+  filter: none;
+}
+
+.about-card-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 80%;
+}
+
+.about-card:hover .about-card-img {
+  filter: blur(5px);
+}
+
+.about-card:hover .about-card-text {
+  opacity: 1;
+}
+
+.about-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.about-card p {
+  font-size: 16px;
+}
+
+/* Optional Custom Styling */
+#contact-us h2, #contact-us h4 {
+  color: #28a745;
+}
+
+#contact-us .form-control, #contact-us .btn {
+  border-radius: 8px;
+}
+
+#contact-us .form-label {
+  font-weight: bold;
+}
+
+#contact-us ul li {
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+#contact-us ul li i {
+  color: #28a745;
+}
+
+
+/* Partners Carousel */
+#partners {
+  padding: 60px 0;
+}
+#partners h2 {
+  color: #27ae60;
+  margin-bottom: 30px;
+}
+#partners .carousel-item {
+  transition: transform 0.5s ease-in-out;
+}
+#partners i {
+  transition: transform 0.3s ease-in-out;
+}
+#partners .carousel-item:hover i {
+  transform: rotate(360deg); /* Rotate the icon on hover */
+}
+#partners .carousel-control-prev-icon,
+#partners .carousel-control-next-icon {
+  background-color: #27ae60;
+  border-radius: 50%;
+}
+
+#weather-forecast{
+  background-image: url(images/clouds.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* Service Cards */
+.service-card {
+  transition: transform 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+  transform: rotate(10deg);
+  background-color: #4CAF50;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: rotate(360deg);
+}
+
+/* Climate Zone Cards */
+.climate-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Best Practices & Crop Disease Cards */
+.practice-card img, .disease-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.practice-card, .disease-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.practice-card:hover, .disease-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #28a745;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.partnership-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.partnership-card:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+/* Hide categories initially */
+.product-category {
+  display: none;
+}
+
+/* Active category */
+.product-category.active {
+  display: flex;
+}
+
+/* Custom styling for the community page */
+.discussion-card, .qna-card, .article-card, .service-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.discussion-card:hover, .qna-card:hover, .article-card:hover, .service-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn-outline-primary {
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.btn-outline-primary:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+.btn-1{
+  background-color: #4CAF50;
+  color: #fff;
+  border: 1px solid #28a745;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  
+}
+
+.container-1 {
+  text-align: center;
+  background-image: url(images/clouds.jpg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  margin: 100px auto;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#temperature {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+#description {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+#weather-icon {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+/* Media query for tablets (screen width between 768px and 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* About Us and Vision Section */
+  #about-vision .col-md-6 {
+    margin-bottom: 20px; /* Add spacing between the two cards on tablets */
+  }
+
+  #about-vision .about-card h3 {
+    font-size: 1.5rem; /* Adjust font size for headings */
+  }
+
+  #about-vision .about-card p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+
+  .about-card-img {
+    height: 200px; /* Limit image height for tablet screens */
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Partners Carousel Section */
+  #partners .carousel-inner .carousel-item {
+    padding: 20px; /* Add some padding for better spacing */
+  }
+
+  #partners .carousel-inner .carousel-item h5 {
+    font-size: 1.25rem; /* Adjust font size for partner names */
+  }
+
+  #partners .carousel-inner .carousel-item p {
+    font-size: 1rem; /* Adjust font size for partner descriptions */
+  }
+
+  /* We Provide the Best Farming Solutions Section */
+  .service-card h3 {
+    font-size: 1.5rem; /* Reduce the size of service titles */
+  }
+
+  .service-card p {
+    font-size: 1rem; /* Adjust the text size for better readability */
+  }
+
+  /* Know Your Climate Zone Section */
+  .climate-zones .climate-card .card-body h5 {
+    font-size: 1.25rem; /* Adjust climate zone title size */
+  }
+
+  .climate-zones .climate-card .card-body p {
+    font-size: 1rem; /* Adjust climate zone description text */
+  }
+
+  .climate-card img {
+    height: 200px; /* Set a max height for images */
+    object-fit: cover;
+  }
+
+  /* General Adjustments */
+  .container {
+    padding: 0 15px; /* Reduce padding for better spacing */
+  }
+
+  h2 {
+    font-size: 1.75rem; /* Adjust section headings */
+  }
+
+  .text-center {
+    text-align: center; /* Ensure central alignment for text */
+  }
+
+  section {
+    padding: 20px 10px;
+}
+
+/* Container adjustments for tablet */
+.container, .container-1 {
+    max-width: 720px;
+}
+
+/* Center headings and decrease font size */
+h2, h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Card and text adjustments */
+.service-card, .practice-card, .disease-card {
+    margin-bottom: 20px;
+}
+
+.service-card .card-body, 
+.practice-card .card-body, 
+.disease-card .card-body {
+    padding: 15px;
+}
+
+/* Image adjustments */
+.card-img-top {
+    height: auto;
+    max-height: 250px;
+}
+
+/* Adjusting font sizes for tablet */
+p, .card-text {
+    font-size: 1rem;
+}
+
+/* Ensuring two columns layout on smaller tablets */
+.row .col-md-6, .row .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+/* Adjust discussion and Q&A card layout */
+.discussion-card, .qna-card {
+    padding: 15px;
+}
+
+/* Adjusting buttons */
+.btn, .btn-outline-primary, .btn-1 {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+}
+
+/* Ensuring adequate spacing between sections */
+.my-5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+}
+
+
+
