@@ -83,28 +83,32 @@ setInterval(() => {
   }
 }, 30 * 60 * 1000);  // 30 minutes interval
 
-// Example to load more discussions dynamically
-const loadDiscussions = () => {
-    const discussionContainer = document.querySelector('#discussion-container');
+
+  // Function to send email using EmailJS
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submit
+
+    emailjs.init("5OGFCuQ5433Y1-S1o");  // Replace YOUR_PUBLIC_KEY with the correct key
+
+
     
-    // Dummy discussions (You can replace this with real data fetched from an API)
-    const discussions = [
-      { title: 'How to grow better tomatoes?', content: 'Farmers share their tips on improving tomato yield.' },
-      { title: 'Water-saving techniques for dry seasons', content: 'Conserve water and grow healthy crops.' }
-    ];
-    
-    discussions.forEach(discussion => {
-      const discussionCard = document.createElement('div');
-      discussionCard.classList.add('discussion-card', 'p-3', 'mb-3');
-      discussionCard.innerHTML = `
-        <h5>${discussion.title}</h5>
-        <p>${discussion.content}</p>
-        <a href="#" class="btn btn-outline-primary">Join the Discussion</a>
-      `;
-      discussionContainer.appendChild(discussionCard);
-    });
-  };
-  
-  // Call the function to load discussions
-  loadDiscussions();
+    // Show loading message
+    const formStatus = document.getElementById('form-status');
+    formStatus.innerText = 'Sending...';
+
+    emailjs.sendForm('service_fs7znfo', 'template_vvkos6a', this)
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        formStatus.innerText = 'Message sent successfully!';
+        formStatus.style.color = 'green';
+      }, function(error) {
+        console.log('FAILED...', error);
+        formStatus.innerText = 'Failed to send message. Please try again.';
+        formStatus.style.color = 'red';
+      });
+  });
+
+ 
+
+
   
