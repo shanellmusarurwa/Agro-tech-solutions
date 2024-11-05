@@ -491,33 +491,10 @@ footer .social-app-section .social-icons a {
 
 /* Hover effect for social media icons */
 footer .social-app-section .social-icons a:hover {
-  color: #4CAF50; /* Preferred hover color */
+  color: #022703; /* Preferred hover color */
   transform: scale(1.2); /* Slight enlargement on hover */
 }
 
-/* Center-align and style the app download buttons */
-footer .social-app-section .app-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px; /* Space between buttons */
-  margin-top: 15px;
-}
-
-footer .social-app-section .app-buttons a {
-  color: #fff;
-  padding: 8px 12px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
-  text-decoration: none;
-}
-
-/* Hover effect for app download buttons */
-footer .social-app-section .app-buttons a:hover {
-  background-color: #4CAF50; /* Hover background color */
-  color: #fff;
-  transform: scale(1.05); /* Slight enlargement on hover */
-}
 
 
 
