@@ -11,6 +11,9 @@ body {
   font-size: 24px;
   color: #27ae60; /* Green color representing agriculture */
 }
+span{
+  color: #4d2818;
+}
 
 /* Navbar Links */
 .nav-link {
@@ -22,6 +25,11 @@ body {
 .nav-link:hover {
   color: #27ae60; /* Green hover effect */
   transform: scale(1.1); /* Subtle enlargement */
+}
+
+/* Custom styling for logo in navbar */
+.navbar-brand img {
+  border-radius: 50%; /* Makes the logo circular, if desired */
 }
 
 /* Dropdown Menu */
@@ -467,10 +475,15 @@ footer .social-app-section {
   text-align: center; /* Center-align text */
   color: #fff;
 }
+.logo{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
 
 footer .social-app-section h5 {
   margin-bottom: 10px;
-  color: #fff;
+  color: #9f4522;
   font-weight: bold;
 }
 
@@ -491,7 +504,7 @@ footer .social-app-section .social-icons a {
 
 /* Hover effect for social media icons */
 footer .social-app-section .social-icons a:hover {
-  color: #022703; /* Preferred hover color */
+  color:#4d2818; /* Preferred hover color */
   transform: scale(1.2); /* Slight enlargement on hover */
 }
 
